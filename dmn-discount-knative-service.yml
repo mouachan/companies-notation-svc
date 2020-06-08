@@ -1,0 +1,17 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: dmn-svc-notation-native
+spec:
+  template:
+    metadata:
+      name: dmn-svc-notation-native-v1
+    spec:
+      containers:
+        - image: >-
+            quay.io/mouachan/dmn-svc-notation:native-1.0
+          env:
+            - name: JAVA_OPTS
+              value: "-Dvertx.cacheDirBase=/work/vertx"
+      imagePullSecrets:
+        - name: quay-secret

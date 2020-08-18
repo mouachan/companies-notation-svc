@@ -59,7 +59,7 @@
               <dmn:text>Score</dmn:text>
             </dmn:inputExpression>
           </dmn:input>
-          <dmn:output id="_fc4c597e-847b-450d-8160-06515743b115"/>
+          <dmn:output id="_fc4c597e-847b-450d-8160-06515743b115" typeRef="UNDEFINED"/>
           <dmn:annotation name=""/>
           <dmn:rule id="_0513bb66-11b5-4807-9677-8ae1d329e0f9">
             <dmn:inputEntry id="_893badaa-a3d1-49a3-9456-06d008aa7a58">
@@ -115,7 +115,7 @@
               <dmn:text>Note</dmn:text>
             </dmn:inputExpression>
           </dmn:input>
-          <dmn:output id="_61be9807-235a-4f15-b38f-599fb9410100"/>
+          <dmn:output id="_61be9807-235a-4f15-b38f-599fb9410100" typeRef="UNDEFINED"/>
           <dmn:annotation name=""/>
           <dmn:rule id="_53c0312c-b22f-4347-9b0e-e19ab6551870">
             <dmn:inputEntry id="_ac8ee14a-a160-47e2-946a-c68e282c3af4">
@@ -271,7 +271,7 @@
                 <dmn:text>CP.TypeAiguillage</dmn:text>
               </dmn:inputExpression>
             </dmn:input>
-            <dmn:output id="_4dc800f6-9fe1-45be-aa10-2c1324527124"/>
+            <dmn:output id="_4dc800f6-9fe1-45be-aa10-2c1324527124" typeRef="UNDEFINED"/>
             <dmn:annotation name=""/>
             <dmn:rule id="_5e2fcd68-31cc-4ac2-8cb4-5a1c8a1c06cb">
               <dmn:inputEntry id="_F51DB82D-7CE4-4BBD-A82B-C604458FD10E">

@@ -19,6 +19,26 @@
   <dmn:itemDefinition id="_A2F56A30-598E-475F-AE07-54F4D2903EB9" name="tScore" isCollection="false">
     <dmn:typeRef>number</dmn:typeRef>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_CAC8BE78-2067-46E3-A021-6380E0CDBD41" name="Notation" isCollection="false">
+    <dmn:itemComponent id="_E32987BD-5329-4845-84B7-78836A21D6B8" name="Score" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_DD8BA4AF-E3B7-4F51-8970-64AF23722F91" name="DecoupageSectoriel" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_C842A76D-C71E-499B-ACB7-4939FBBB8486" name="Note" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_FFA66FC6-9518-4A60-8BEB-EA2B083615F6" name="Orientation" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_8E56BDE2-16BD-481E-9339-814B068868CC" name="TypeAiguillage" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_5205BDA5-38D2-4A70-B87D-3F72223B012E" name="Detail" isCollection="true">
+      <dmn:typeRef>Variable</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:decision id="_371cfc9f-087f-4dcc-b0d8-05bb90bc6502" name="ScoreFinal">
     <dmn:extensionElements/>
     <dmn:variable id="_c5f700cd-734c-412b-9b10-1152ec406c19" name="ScoreFinal" typeRef="Any"/>
@@ -37,7 +57,7 @@
   </dmn:decision>
   <dmn:decision id="_df30a179-726b-4616-bef7-803b8c294fde" name="Notation">
     <dmn:extensionElements/>
-    <dmn:variable id="_ec350155-387c-442f-af81-9aa354d6e730" name="Notation" typeRef="Any"/>
+    <dmn:variable id="_ec350155-387c-442f-af81-9aa354d6e730" name="Notation" typeRef="Notation"/>
     <dmn:informationRequirement id="_972f5b75-3015-4205-9b0c-fbe0bbdce342">
       <dmn:requiredDecision href="#_ade4146f-4804-42ad-8274-29fd8fa25e29"/>
     </dmn:informationRequirement>

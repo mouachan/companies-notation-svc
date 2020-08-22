@@ -1,10 +1,7 @@
 package org.redhat.notation;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class Notation {
     private double score;
@@ -12,8 +9,6 @@ public class Notation {
     private String orientation;
     private double decoupageSectoriel;
     private String typeAiguillage;
-    private List<Variable> detail = new ArrayList<Variable>();
-
       /**
      * @return String return the Orientation
      */
@@ -86,23 +81,11 @@ public class Notation {
     }
 
 
-    /**
-     * @return Map return the detail
-     */
-    public List<Variable> getDetail() {
-        return detail;
-    }
 
-    /**
-     * @param detail the detail to set
-     */
-    public void setDetail(List<Variable> detail) {
-        this.detail = detail;
-    }
 
 	@Override
 	public String toString() {
-		return "Notation [decoupageSectoriel=" + decoupageSectoriel + ", detail=" + detail + ", note=" + note
+		return "Notation [decoupageSectoriel=" + decoupageSectoriel + ", note=" + note
 				+ ", orientation=" + orientation + ", score=" + score + ", typeAiguillage=" + typeAiguillage + "]";
     }
     
@@ -118,14 +101,12 @@ public class Notation {
                  this.setScore(((BigDecimal)map.get(key)).doubleValue());
             else if(key.equals("Orientation"))
                  this.setOrientation((String)map.get(key));
-            else if(key.equals("Detail")){
-               this.setDetail((List<Variable>)map.get(key));
-            }
-
-
-
+      
         }
 
     }
+
+
+
 
 }

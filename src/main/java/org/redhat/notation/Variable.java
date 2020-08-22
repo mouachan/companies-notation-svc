@@ -1,5 +1,9 @@
 package org.redhat.notation;
 
+import javax.enterprise.context.ApplicationScoped;
+
+
+@ApplicationScoped
 public class Variable {
    private String type;
    private double value; 

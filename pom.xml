@@ -58,10 +58,6 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-container-image-docker</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
     </dependency>
     <dependency>
@@ -77,9 +73,17 @@
       <artifactId>kogito-events-reactive-messaging-addon</artifactId>
     </dependency>
     <dependency>
-  <groupId>org.kie.kogito</groupId>
-  <artifactId>process-management-addon</artifactId>
-</dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>process-management-addon</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-container-image-s2i</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-openshift</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

@@ -1,7 +1,5 @@
-package org.redhat.notation;
+package org.redhat.model;
 
-import java.math.BigDecimal;
-import java.util.HashMap;
 
 public class Notation {
     private double score;
@@ -89,22 +87,23 @@ public class Notation {
 				+ ", orientation=" + orientation + ", score=" + score + ", typeAiguillage=" + typeAiguillage + "]";
     }
     
-    public void toNotation(HashMap<String,Object> map){
+   /* public void toNotation(HashMap<String,Object> map){
         for (String key : map.keySet()) {
-            if(key.equals("DecoupageSectoriel"))
+            System.out.println("key "+key+ " value "+map.get(key));
+            if(key.equals("decoupageSectoriel"))
                 this.setDecoupageSectoriel(((BigDecimal)map.get(key)).doubleValue());
-            else if(key.equals("Note"))
+            else if(key.equals("note"))
                 this.setNote((String)map.get(key));
-            else if(key.equals("TypeAiguillage"))
+            else if(key.equals("typeAiguillage"))
                  this.setTypeAiguillage((String)map.get(key));
-            if(key.equals("Score"))
+            if(key.equals("score"))
                  this.setScore(((BigDecimal)map.get(key)).doubleValue());
-            else if(key.equals("Orientation"))
+            else if(key.equals("orientation"))
                  this.setOrientation((String)map.get(key));
       
         }
 
-    }
+    }*/
 
 
 

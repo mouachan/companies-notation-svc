@@ -1,4 +1,4 @@
-package org.redhat.notation;
+package org.redhat.model;
 
 public class Bilan {
     private String siren;
